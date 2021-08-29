@@ -1,8 +1,9 @@
 #console {
-    font-size: 10pt;
+    font-size: 12pt;
     font-family: 'fira code';
     height: 100%;
     padding: 1rem;
+    cursor: default;
 }
 
 .accord {
