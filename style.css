@@ -1,9 +1,14 @@
 #console {
-    font-size: 12pt;
+    font-size: 16px;
     font-family: 'fira code';
     height: 100%;
     padding: 1rem;
     cursor: default;
+    background-color: #202b37;
+    height: 600px;
+    overflow-y: auto;
+    color: white;
+    line-height: 1.6;
 }
 
 .accord {
@@ -26,6 +31,25 @@
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+}
+
+.collapse {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.collapse>em {
+    max-width: 100%;
+}
+
+.expandable {
+    transition: max-height 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+    box-sizing: content-box;
 }
 
 @keyframes inf {
